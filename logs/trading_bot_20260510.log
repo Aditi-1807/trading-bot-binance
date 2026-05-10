@@ -1,0 +1,23 @@
+2026-05-10 22:29:37 | INFO     | trading_bot | Logging initialised → logs\trading_bot_20260510.log
+2026-05-10 22:29:37 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-05-10 22:29:37 | DEBUG    | trading_bot.client | GET https://testnet.binancefuture.com/fapi/v1/ping params={}
+2026-05-10 22:29:38 | DEBUG    | trading_bot.client | HTTP GET https://testnet.binancefuture.com/fapi/v1/ping → status=200 body={}
+2026-05-10 22:29:38 | INFO     | trading_bot.client | Ping OK — testnet is reachable.
+2026-05-10 22:29:51 | INFO     | trading_bot | Logging initialised → logs\trading_bot_20260510.log
+2026-05-10 22:29:51 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-05-10 22:29:51 | INFO     | trading_bot.orders | Submitting BUY MARKET order | symbol=BTCUSDT qty=0.001 price=market
+2026-05-10 22:29:51 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'recvWindow': 5000}
+2026-05-10 22:29:52 | DEBUG    | trading_bot.client | HTTP POST https://testnet.binancefuture.com/fapi/v1/order → status=200 body={"orderId":13126903727,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"3rQOae5cipWbiUb3Kbf0iS","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-05-10 22:29:52 | INFO     | trading_bot.orders | Order accepted | orderId=13126903727 status=NEW executedQty=0.0000 avgPrice=0.00
+2026-05-10 22:30:05 | INFO     | trading_bot | Logging initialised → logs\trading_bot_20260510.log
+2026-05-10 22:30:05 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-05-10 22:30:05 | INFO     | trading_bot.orders | Submitting SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=100000
+2026-05-10 22:30:05 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '100000', 'timeInForce': 'GTC', 'recvWindow': 5000}
+2026-05-10 22:30:06 | DEBUG    | trading_bot.client | HTTP POST https://testnet.binancefuture.com/fapi/v1/order → status=200 body={"orderId":13126904084,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"6RgacAoprY9FTpXhf4m0Q6","price":"100000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"u
+2026-05-10 22:30:06 | INFO     | trading_bot.orders | Order accepted | orderId=13126904084 status=NEW executedQty=0.0000 avgPrice=0.00
+2026-05-10 22:30:23 | INFO     | trading_bot | Logging initialised → logs\trading_bot_20260510.log
+2026-05-10 22:30:23 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-05-10 22:30:35 | INFO     | trading_bot | Logging initialised → logs\trading_bot_20260510.log
+2026-05-10 22:30:35 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://testnet.binancefuture.com)
+2026-05-10 22:30:35 | DEBUG    | trading_bot.client | GET https://testnet.binancefuture.com/fapi/v2/account params={'timestamp': 1778432435355, 'recvWindow': 5000}
+2026-05-10 22:30:36 | DEBUG    | trading_bot.client | HTTP GET https://testnet.binancefuture.com/fapi/v2/account?timestamp=1778432435355&recvWindow=5000&signature=e8030aa06df433ea71e9e1769a4f084f8a6990d8638246c7647f0e6b1b9a38ac → status=200 body={"feeTier":0,"canTrade":true,"canDeposit":true,"canWithdraw":true,"feeBurn":true,"tradeGroupId":-1,"updateTime":0,"multiAssetsMargin":false,"totalInitialMargin":"4.06777190","totalMaintMargin":"0.32542175","totalWalletBalance":"4999.96748000","totalUnrealizedProfit":"0.05543793","totalMarginBalance":"5000.02291793","totalPositionInitialMargin":"4.06777190","totalOpenOrderInitialMargin":"0.00000000","totalCrossWalletBalance":"4999.96748000","totalCrossUnPnl":"0.05543793","availableBalance":"4995.
